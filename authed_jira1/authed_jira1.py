@@ -37,5 +37,5 @@ issue = jc.issue('CUZKRUIAN-12345')
 
 # print the issue details
 print "Summary: ", issue.fields.summary
-print "Type: ", issue.fields.issuetype.name          # 'New Feature'
-print "Reporter: ", issue.fields.reporter.displayName    # 'Mike Cannon-Brookes [Atlassian]'
+print "Type: ", issue.fields.issuetype.name
+print "Reporter: ", issue.fields.reporter.displayName
