@@ -16,7 +16,7 @@ def connect_jira(log, jira_server, jira_user, jira_password):
         jira = JIRA(options=jira_options, basic_auth=(jira_user, jira_password))
                                         # ^--- Note the tuple
         return jira
-    except Exception,e:
+    except Exception as e:
         log.error("Failed to connect to JIRA: %s" % e)
         return None
 
@@ -27,7 +27,10 @@ logging.info("Begin")
 # read credentials from environment
 username = os.environ['JIRA_USER']
 password = os.environ['JIRA_PASS']
-print "Username: ", username
+print("Username: ", username)
+#print("Password: ", password)
+
+#quit()
 
 # create a connection object, jc
 jc = connect_jira(log, "https://czjira.ness.com", username, password)
@@ -36,6 +39,6 @@ jc = connect_jira(log, "https://czjira.ness.com", username, password)
 issue = jc.issue('CUZKRUIAN-12345')
 
 # print the issue details
-print "Summary: ", issue.fields.summary
-print "Type: ", issue.fields.issuetype.name
-print "Reporter: ", issue.fields.reporter.displayName
+print("Summary: ", issue.fields.summary)
+print("Type: ", issue.fields.issuetype.name)
+print("Reporter: ", issue.fields.reporter.displayName)
