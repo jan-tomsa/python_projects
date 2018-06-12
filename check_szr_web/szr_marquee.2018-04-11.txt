@@ -1,0 +1,5 @@
+<marquee>
+<div class="article-content">
+<p>V souèasné dobì je omezena dostupnost základních registrù. Na odstranìní chyby se pracuje. Za pøípadné problémy se omlouváme</p>
+</div>
+</marquee>

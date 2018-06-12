@@ -1,0 +1,5 @@
+<marquee>
+<div class="article-content">
+<p><span>Z technických dùvodù jsou služby RÚIAN ve ètvrtek 26.04.2018 od 20.00 na dobu cca 30 minut nedostupné.</span></p>
+</div>
+</marquee>
