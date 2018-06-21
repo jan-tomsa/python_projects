@@ -16,10 +16,13 @@ div_scroll = soup.find_all("div", id="scroll")
 #new_tag = soup.find('marquee')
 #new_tag = soup.find(id="hp-text-scroll")
 
+p_text = ""
 for tag in div_scroll:
-    new_text = tag.find('p').get_text()
+    p_element = tag.find('p')
+    if(not p_element is None):
+        p_text = p_element.get_text()
 
-#new_text = str(new_tag)
+new_text = p_text
 
 if orig_text == new_text:
     print('Marquee unchanged.')
